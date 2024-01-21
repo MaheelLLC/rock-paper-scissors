@@ -19,4 +19,19 @@ function getComputerChoice() {
     return choice;
 }
 
-console.log(getComputerChoice());
+function playRound(playerSelection, computerSelection) {
+    let player = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1);
+    let computer = computerSelection;
+    if ((computer === 'Rock' && player === 'Scissors') || 
+        (computer === 'Paper' && player === 'Rock') || 
+        (computer === 'Scissors' && player === 'Paper')) {
+            return `You lose and you suck, you loser...${computer} beats ${player}`;
+        }
+    else if (computer == player) {
+        return `It\'s a tie. Do better next time. Both of you picked ${computer}.`;
+    }
+    else {
+        return 'You cheated. You hacked and beat my game and found out that ' + 
+        `the computer picked ${computer}.`;
+    }
+}
