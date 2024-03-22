@@ -25,8 +25,8 @@ function playRound(playerSelection, computerSelection) {
        (computer === 'Paper' && player === 'Rock') || 
        (computer === 'Scissors' && player === 'Paper')) {
 
-            console.log(`You lose! ${computer} beats ${player}`);
-            return 'loss';
+        console.log(`You lose! ${computer} beats ${player}`);
+        return 'loss';
     }
     else if (computer == player) {
         console.log(`You tied! You both picked ${computer}.`);

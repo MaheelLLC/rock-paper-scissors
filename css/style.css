@@ -1,0 +1,92 @@
+body {
+    background-color: #222831;
+    color: aliceblue;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url(../fonts/PressStart2P.ttf) format('truetype');
+}
+
+#title {
+    background-color: #111720;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+
+}
+
+#title h1 {
+    color: #FAC650;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin: 0px;
+}
+
+#selections {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+#selections button {
+    background-color: #55647b;
+    border: none;
+    padding: 12px 24px;
+    font-size: 72px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#selections button:hover {
+    background-color: #778899;
+}
+
+#selections button:active {
+    background-color: #9dbad5; 
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #111720;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    z-index: 1000;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+#close-popup {
+    top: 0px;
+    right: 0px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #222831;
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
